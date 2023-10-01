@@ -1,0 +1,84 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+% \usepackage{NotoSansSC_external}
+% \usepackage{NotoSerifCJKsc_external}
+% \usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{王子欣}
+
+\basicInfo{
+  \email{1667913211@qq.com.com} \textperiodcentered\ 
+  \phone{(+86) 17606616844} \textperiodcentered\}
+ 
+\section{\faGraduationCap\  教育背景}
+\datedsubsection{\textbf{广州大学}, 上海}{2022 -- 至今}
+\textit{在读硕士研究生}\ 人工智能, 预计 2025 年 6 月毕业
+\datedsubsection{\textbf{中山学院},中山}{2018 -- 2022}
+\textit{学士}\ 移动互联
+
+
+\datedsubsection{\textbf{外卖小程序}}{--}
+\role{java, vue}{个人项目}
+\begin{onehalfspacing}
+https://gitee.com/wayzinx/sky-take-out
+\begin{itemize}
+  \item 使用负载均衡器Nginx来分发流量
+  \item 使用spring cache框架实现缓存功能
+  \item 使用布隆过滤器来处理缓存穿透问题
+  \item 为每个缓存随即设置不同过期时间预防缓存雪崩的问题
+  \item 使用spring task框架来实现异步执行，提高了服务器的运行效率和响应
+  速度
+  \item 使用HTTP/2来减少连接的建立和关闭的开销
+\end{itemize}
+\end{onehalfspacing}
+
+
+
+% Reference Test
+%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
+%An xxx optimized for xxx\cite{verma2015large}
+%\begin{itemize}
+%  \item main contribution
+%\end{itemize}
+
+\section{\faCogs\ 机器学习}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item 1.熟悉深度学习框架，常用的是PyTorch 
+  \item 2.编程语言：Python、JAVA
+  \item 3.数据处理和分析工具：Pandas、NumPy、Scikit-learn
+\end{itemize}
+
+\section{\faCogs\ java}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item 1. 后端框架：熟练运用 Spring Cloud、Spring Boot、SSM、MyBatis Plus 等框架
+  \item 2. 中间件：熟悉 MySQL、Redis、Nginx等常用组件，有项目实践经验
+  \item 3. 前端：熟练运用 React、Vue组件库，有微信开发小程序的经验
+  \item 4. 分布式：了解分布式锁，负载均衡，分布式数据存储
+\end{itemize}
+
+\section{\faHeartO\ 研究成果}
+\datedline{\textit{一作},EncoderMU-Machine Unlearning In Contrast Learning}{EAI-SPNCE}
+
+\section{\faInfo\ 其他}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+ 
+  \item 语言: 英语 - CET-6
+\end{itemize}
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}
